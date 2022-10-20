@@ -6,6 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="Com.OrangeHRM.TestCases.LoginpageTest">
+        <methods>
+          <include name="Setup"/>
+          <include name="Teardown"/>
+          <include name="OrangeUername"/>
+        </methods>
+      </class> <!-- Com.OrangeHRM.TestCases.LoginpageTest -->
       <class name="Com.OrangeHRM.TestCases.HomepageTest">
         <methods>
           <include name="Setup"/>
@@ -13,21 +20,6 @@
           <include name="Teardown"/>
         </methods>
       </class> <!-- Com.OrangeHRM.TestCases.HomepageTest -->
-      <class name="Com.OrangeHRM.TestCases.ConfigurationPageTest">
-        <methods>
-          <include name="ConfigList"/>
-          <include name="Setup"/>
-          <include name="TearDown"/>
-        </methods>
-      </class> <!-- Com.OrangeHRM.TestCases.ConfigurationPageTest -->
-      <class name="Com.OrangeHRM.TestCases.LoginpageTest">
-        <methods>
-          <include name="Setup"/>
-          <include name="Teardown"/>
-          <include name="OrangeUername"/>
-          <include name="OrangeHRMPageTitle"/>
-        </methods>
-      </class> <!-- Com.OrangeHRM.TestCases.LoginpageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
